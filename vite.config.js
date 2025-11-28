@@ -23,7 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/academic-project-page-template-vue',
+  base:'/markov-var-page',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

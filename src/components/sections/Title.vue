@@ -4,16 +4,16 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = './logo.png'
+const logo = ''
 
 // 标题
-const title = 'Academic Project Page Template'
+const title = 'Markovian Scale Prediction: A New Era of Visual Autoregressive Generation'
 
 // 标题颜色
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = ' (Vue based)'
+const title_supp = ''
 
 // 标题补充颜色
 const title_supp_color = '#42B883'
@@ -24,22 +24,46 @@ const btn_color = '#444444'
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Your Name",
-    icon: "./icon/junyaohu.jpg",
-    homepage: "https://junyaohu.github.io/",
-    address_flag: "1,#"
+    name: "Yu Zhang",
+    icon: "",
+    homepage: "#",
+    address_flag: "1"
   },
   {
-    name: "Anya Forger",
-    icon: "./icon/anya.jpg",
-    homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "2,#"
+    name: "Jingyi Liu",
+    icon: "",
+    homepage: "#",
+    address_flag: "1"
   },
   {
-    name: "BugCat Capoo",
-    icon: "./icon/capoo.webp",
-    homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
+    name: "Yiwei Shi",
+    icon: "",
+    homepage: "#",
+    address_flag: "2"
+  },
+  {
+    name: "Qi Zhang",
+    icon: "",
+    homepage: "#",
+    address_flag: "1"
+  },
+  {
+    name: "Duoqian Miao",
+    icon: "",
+    homepage: "#",
     address_flag: "1,*"
+  },
+  {
+    name: "Changwei Wang",
+    icon: "",
+    homepage: "#",
+    address_flag: "1"
+  },
+  {
+    name: "Longbing Cao",
+    icon: "",
+    homepage: "#",
+    address_flag: "3"
   },
 ]
 
@@ -47,31 +71,33 @@ const authors = [
 const addresses = [
   {
     address_flag: "1",
-    name: "Home University",
-    icon: "./icon/home.png",
-    homepage: "https://github.com/hmuniversity"
+    name: "Tongji University",
+    icon: "",
+    homepage: "#"
   },
   {
     address_flag: "2",
-    name: "IKUN University",
-    icon: "./icon/ikun.avif",
-    homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+    name: "University of Bristol",
+    icon: "",
+    homepage: "#"
+  },
+  {
+    address_flag: "3",
+    name: "Macquarie University",
+    icon: "",
+    homepage: "#"
   },
 ]
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+  "*: Corresponding Author."
 
 // 最新消息
 const news = "🔥 [2024-12-15] This template project is still under development."
 
 // 强调内容
 const emphases = [
-  "🎉 [ABCD 2024] Poster",
-  "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
-  "传递人工智能算法科普教育的减约理解",
-  "提升信息效率及认知维度"
 ]
 
 // 提供引导资料链接
@@ -83,17 +109,12 @@ const buttons = [
   },
   {
     disabled: true,
-    name: "中译版",
-    component: Document,
-  },
-  {
-    disabled: false,
     name: "Code",
     link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
     component: Files,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Demo",
     link: "https://junyaohu.github.io/academic-project-page-template-vue",
     component: MagicStick,
@@ -103,21 +124,21 @@ const buttons = [
     name: "Poster",
     component: Picture,
   },
+  // {
+  //   disabled: true,
+  //   name: "Slide",
+  //   component: DataAnalysis,
+  // },
+  // {
+  //   disabled: false,
+  //   name: "Video (减论)",
+  //   link: "https://www.bilibili.com/video/BV15XkgYiE73/",
+  //   component: Film,
+  // },
   {
     disabled: true,
-    name: "Slide",
-    component: DataAnalysis,
-  },
-  {
-    disabled: false,
-    name: "Video (减论)",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
-    component: Film,
-  },
-  {
-    disabled: false,
     name: "Video (Tutorial)",
-    link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
+    // link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
     component: Film,
   },
 ]
@@ -128,11 +149,11 @@ const buttons = [
   <div>
 
     <!-- 最新消息提示 -->
-    <el-row justify="center">
+    <!-- <el-row justify="center">
       <el-col :span="24">
         <el-alert title="🔥 This template is still under development." type="success" />
       </el-col>
-    </el-row>
+    </el-row> -->
 
     <!-- 文章logo -->
     <el-row v-if="logo" justify="center">
@@ -150,7 +171,7 @@ const buttons = [
     </el-row>
 
     <!-- 作者名单 -->
-    <el-row justify="center">
+    <el-row justify="center" style="margin: 10px 0;">
       <a :href=author.homepage v-for="author in authors">
         <el-button class="title-button" type="primary" text>
           <el-avatar v-if="author.icon" :size="40" :src="author.icon" />
@@ -162,7 +183,7 @@ const buttons = [
     </el-row>
 
     <!-- 地址名单 -->
-    <el-row justify="center">
+    <el-row justify="center" style="margin: 5px 0;">
       <a :href=address.homepage v-for="address in addresses">
         <el-button class="title-button" type="primary" text>
           <el-avatar v-if="address.icon" :size="40" :src="address.icon" />
@@ -215,12 +236,12 @@ const buttons = [
 
 /* 姓名和地址按钮 */
 .title-button {
-  margin: 10px 3px;
+  margin: 5px 2px;
 }
 
 /* 姓名和地址按钮光标悬浮 */
 .title-button:hover {
-  margin: 10px 8px;
+  margin: 5px 4px;
 }
 
 /* 引导材料按钮 */
@@ -262,7 +283,7 @@ const buttons = [
 .con-cor {
   font-family: Arial;
   font-size: 14px;
-  margin: 18px 0px;
+  margin: 10px 0px;
   text-align: center;
 }
 

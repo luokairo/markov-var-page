@@ -12,7 +12,7 @@ import Echart from './sections/Echart.vue'
 import Table from './sections/Table.vue'
 import Collapse from './sections/Collapse.vue'
 import SeletionForComparison from './sections/SeletionForComparison.vue'
-import Comment from './sections/Comment.vue'
+
 import Latex from './sections/Latex.vue'
 import Model3D from './sections/Model3D.vue'
 import GaussianSplats3D from './sections/GaussianSplats3D.vue'
@@ -25,14 +25,12 @@ export default {
     BibTeX,
     Carousel,
     Video,
-    ImageSlider,
     ImageSliderInner,
     ImageSelector,
     Echart,
     Collapse,
     Table,
     SeletionForComparison,
-    Comment,
     Latex,
     Model3D,
     GaussianSplats3D
@@ -42,10 +40,10 @@ export default {
 
 <template>
   <Title/>
-  <Carousel/>
-  <Video/>
+  <!-- <Carousel/> -->
+  <!-- <Video/> -->
   <Abstract/>
-  <Markdown/>
+  <!-- <Markdown/>
   <Latex/>
   <Table/>
   <Collapse/>
@@ -55,7 +53,7 @@ export default {
   <SeletionForComparison/>
   <ImageSliderInner/>
   <ImageSlider/>
-  <ImageSelector/>
-  <BibTeX/>
-  <Comment/>
+  <ImageSelector/> -->
+  <!-- <BibTeX/> -->
+  <!-- <Comment/> -->
 </template>

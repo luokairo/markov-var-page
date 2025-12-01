@@ -114,17 +114,17 @@ const buttons = [
     link: "https://github.com/luokairo/Markov-VAR",
     component: Files,
   },
-  {
-    disabled: true,
-    name: "Demo",
-    link: "https://junyaohu.github.io/academic-project-page-template-vue",
-    component: MagicStick,
-  },
-  {
-    disabled: true,
-    name: "Poster",
-    component: Picture,
-  },
+  // {
+  //   disabled: true,
+  //   name: "Demo",
+  //   link: "https://junyaohu.github.io/academic-project-page-template-vue",
+  //   component: MagicStick,
+  // },
+  // {
+  //   disabled: true,
+  //   name: "Poster",
+  //   component: Picture,
+  // },
   // {
   //   disabled: true,
   //   name: "Slide",
@@ -136,12 +136,12 @@ const buttons = [
   //   link: "https://www.bilibili.com/video/BV15XkgYiE73/",
   //   component: Film,
   // },
-  {
-    disabled: true,
-    name: "Video (Tutorial)",
-    // link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
-    component: Film,
-  },
+  // {
+  //   disabled: true,
+  //   name: "Video (Tutorial)",
+  //   // link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
+  //   component: Film,
+  // },
 ]
 
 </script>

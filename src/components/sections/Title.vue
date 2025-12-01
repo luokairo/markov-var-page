@@ -103,8 +103,9 @@ const emphases = [
 // 提供引导资料链接
 const buttons = [
   {
-    disabled: true,
+    disabled: false,
     name: "Paper",
+    link: "https://arxiv.org/abs/2511.23334",
     component: Document,
   },
   {
